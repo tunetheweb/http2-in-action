@@ -16,7 +16,7 @@ const requestHandler = (request, response) => {
   console.log('HTTP Version: ' + headers['protocol'])
   console.log('HTTP2 Support: ' + headers['http2'])
   console.log('HTTP2 Push Support: ' + headers['h2push'])
-  response.setHeader('Link','</assets/css/common.css>;rel=preload')
+  response.setHeader('Link','</assets/css/common.css>;rel=preload;as=style')
   response.writeHead(200, {"Content-Type": "text/html"})
   response.write('<!DOCTYPE html>\n')
   response.write('<html>\n')
