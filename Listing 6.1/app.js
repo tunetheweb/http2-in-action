@@ -7,7 +7,7 @@
 
 'use strict'
 
-const http2 = require('http')
+const http = require('http')
 
 const PORT=3000
 
@@ -31,6 +31,6 @@ const requestHandler = (request, response) => {
 }
 
 var server = http.createServer(requestHandler)
-server.listen(port)
-console.log('Server is listening on ' + port)
+server.listen(PORT)
+console.log('Server is listening on ' + PORT)
 
