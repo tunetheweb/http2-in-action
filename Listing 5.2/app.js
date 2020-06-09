@@ -17,7 +17,7 @@ async function requestHandler (request, response) {
   console.log(request.url)
 
   //Start getting the response ready
-  response.setHeader('Link','</assets/css/common.css>;rel=preload ')
+  response.setHeader('Link','</assets/css/common.css>;rel=preload;as=style')
 
   //Let’s pause here for 10 seconds to simulate a slow resource
   await sleep(10000)
