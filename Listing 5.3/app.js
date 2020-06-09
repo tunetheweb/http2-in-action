@@ -60,5 +60,3 @@ server.on('stream', (stream, headers) => {
 //Start the server listening for requests on the given port
 server.listen(PORT)
 console.log(`Server listening on ${PORT}`)
-
-})
